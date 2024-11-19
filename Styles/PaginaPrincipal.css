@@ -1,3 +1,79 @@
 .Encabezado {
-    background-color: rgba(6, 152, 152, 0.981);
+    background-color: rgba(0, 0, 0, 0.981);
+    display: flex;
+    justify-content: space-between; /* Espacio entre logo/páginas y elementos a la derecha */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px; /* Espaciado interno para mejor apariencia */
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+    margin-left: 0;
+    display: block;
+}
+
+.Paginas {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los enlaces */
+    align-items: flex-end; /* Alinea al fondo del contenedor */
+    flex: 1; /* Permite que ocupe el espacio necesario */
+}
+
+.Paginas a {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0 15px; /* Espaciado entre enlaces */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 20px; /* Ajusta el tamaño del texto */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.Buscador {
+    display: inline-flex;
+    align-items: center; /* Centra verticalmente el input y el botón */
+    margin-right: 75px; /* Ajusta la distancia al borde derecho */
+    text-align: right;
+}
+
+.Buscador input {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 250px;
+    height: 22px;
+    padding: 5px;
+    font-size: 14px;
+    border: 3px solid #000000;
+    border-radius: 12px; /* Bordes redondeados */
+}
+
+.Buscador button {
+    margin-left: 5px; /* Poner espacio entre el input y el botón */
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    background-color: #fdfdfd;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px; /* redondear los bordes */
+}
+
+.Cuenta {
+    display: inline-flex;
+    align-items: center; /* Sirve para centrar verticalmente el icono y el enlace */
+}
+
+.Cuenta a {
+    text-decoration: none; /* Para eliminar el subrayado del enlace */
+    color: white;
+    font-size: 14px;
+    margin-left: 5px; /* Espacio entre el icono y el texto */
+    margin-right: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icono-cuenta {
+    font-size: 32px;
 }
