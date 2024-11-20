@@ -13,13 +13,13 @@
         <div class="logo">
             <img src="../Images/logo.png.webp">
         </div>
-    <div class="Paginas">
-        <a href="Musica.html">Music</a>
-        <a href="Contacto.html">Contact Us</a>
-        <a href="Preguntas.html">FAQS</a>
-        <a href="Sorteos.html">Raffles</a>
-        <a href="Ayuda.html">Help</a>
-    </div>
+        <div class="Paginas">
+            <a href="Musica.html">Music</a>
+            <a href="Contacto.html">Contact Us</a>
+            <a href="Preguntas.html">FAQS</a>
+            <a href="Sorteos.html">Raffles</a>
+            <a href="Ayuda.html">Help</a>
+        </div>
         <div class="Buscador">
             <input type="text" placeholder="Search by your favourite Artist or Event">
             <button class="boton-busqueda">🔍</button>
@@ -30,6 +30,7 @@
         </div>
     </div>
 </head>
+
 <body>
     <div class="primera-parte">
         <img src="../Images/gunsroses.png" alt="Imagen de concierto de fondo">
@@ -41,7 +42,23 @@
                 ¡Pronto más detalles sobre fechas y ciudades, 20 de Diciembre! 🤘🎤</p>
             <button>ENTRADAS</button>
         </div>
-    </div>    
+    </div>
+    <button class="help-button">❔</button>
+    <div class="help-center">
+        <div class="help-center-header">
+            <h1>Help Center</h1>
+            <button class="close-button">✖</button>
+        </div>
+        <div class="help-center-search">
+            <input type="text" placeholder="Search for help">
+            <button>🔍</button>
+        </div>
+        <div class="help-center-options">
+            <div class="option">dssfdsdsf</div>
+            <div class="option">dsgdsfsgfdhdh</div>
+            <div class="option">eufiuvhdcuvW</div>
+        </div>
+    </div>
     <div class="Mas-demandados">
         <article>
             <img src="fdjhfkjshfj.png" alt="Imagen de concierto demandado Rock">
@@ -186,6 +203,20 @@
         </div>
     </footer>
 </body>
-
 <script>
+    const helpButton = document.querySelector('.help-button');
+    const helpCenter = document.querySelector('.help-center');
+    const closeButton = document.querySelector('.close-button');
+
+    helpButton.addEventListener('click', () => {
+        if (helpCenter.classList.contains('show')) {
+            helpCenter.classList.remove('show');
+        } else {
+            helpCenter.classList.add('show');
+        }
+    });
+
+    closeButton.addEventListener('click', () => {
+        helpCenter.classList.remove('show');
+    });
 </script>

@@ -134,3 +134,122 @@
 .contenido-superpuesto button:hover {
     background-color: #cc0000;
 }
+
+.help-button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #d74b05;
+    border: none;
+    border-radius: 40%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.help-button:hover {
+    background-color: #d74b05;
+}
+
+
+.help-center {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 360px;
+    height: 500px;
+    background: linear-gradient(to bottom, #108ab3, #ffffff);
+    border-radius: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+}
+
+/* Muestra el Help Center cuando está visible */
+.help-center.show {
+    display: flex;
+}
+
+/* Header del Help Center */
+.help-center-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #07d37e;
+    color: white;
+}
+
+.help-center-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Buscador dentro del Help Center */
+.help-center-search {
+    display: flex;
+    padding: 10px;
+    background: #e7e9ff;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.help-center-search input {
+    flex: 1;
+    border: none;
+    border-radius: 16px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: 3px solid #000000;
+}
+
+.help-center-search button {
+    background-color: #ffffff;
+    color: white;
+    border-radius: 16px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 3px solid #000000;
+}
+
+.help-center-options {
+    padding: 10px;
+}
+
+.help-center-options .option {
+    background: white;
+    border: 3px solid #000000;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    
+}
+
+.help-center-options .option:hover {
+    background: #f0f4ff;
+    transform: scale(1.02);
+    
+}
