@@ -1,5 +1,5 @@
 .Encabezado {
-    background-color: rgba(0, 0, 0, 0.981);
+    background-color:#1f2528;
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -11,6 +11,7 @@
     height: auto;
     margin-left: 0;
     display: block;
+    border-radius: 50%;
 }
 
 .Paginas {
@@ -135,7 +136,7 @@
     background-color: #cc0000;
 }
 
-.help-button {
+.boton-ayuda {
     position: fixed;
     bottom: 25px;
     right: 25px;
@@ -153,12 +154,12 @@
     z-index: 1000;
 }
 
-.help-button:hover {
+.boton-ayuda:hover {
     background-color: #d74b05;
 }
 
 
-.help-center {
+.centro-ayuda {
     position: fixed;
     bottom: 80px;
     right: 20px;
@@ -174,12 +175,12 @@
 }
 
 /* Muestra el Help Center cuando está visible */
-.help-center.show {
+.centro-ayuda.show {
     display: flex;
 }
 
 /* Header del Help Center */
-.help-center-header {
+.centro-ayuda-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -188,12 +189,12 @@
     color: white;
 }
 
-.help-center-header h1 {
+.centro-ayuda-header h1 {
     margin: 0;
     font-size: 24px;
 }
 
-.close-button {
+.boton-cerrar {
     background: none;
     border: none;
     color: rgb(0, 0, 0);
@@ -203,7 +204,7 @@
 }
 
 /* Buscador dentro del Help Center */
-.help-center-search {
+.centro-ayuda-busqueda {
     display: flex;
     padding: 10px;
     background: #e7e9ff;
@@ -211,7 +212,7 @@
     margin: 10px;
 }
 
-.help-center-search input {
+.centro-ayuda-busqueda input {
     flex: 1;
     border: none;
     border-radius: 16px;
@@ -221,7 +222,7 @@
     border: 3px solid #000000;
 }
 
-.help-center-search button {
+.centro-ayuda-busqueda button {
     background-color: #ffffff;
     color: white;
     border-radius: 16px;
@@ -231,11 +232,11 @@
     border: 3px solid #000000;
 }
 
-.help-center-options {
+.centro-ayuda-opciones {
     padding: 10px;
 }
 
-.help-center-options .option {
+.centro-ayuda-opciones .option {
     background: white;
     border: 3px solid #000000;
     border-radius: 18px;
@@ -248,7 +249,7 @@
     
 }
 
-.help-center-options .option:hover {
+.centro-ayuda-opciones .option:hover {
     background: #f0f4ff;
     transform: scale(1.02);
     
